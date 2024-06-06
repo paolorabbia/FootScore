@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Progetto a gruppi - HTML/CSS/JS</title>
+
+  <!-- Using CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- Personal styles and scripts -->
+  <link href="login.css" rel="stylesheet" type="text/css" />
+  <script src="js/removeLogin.js"></script>
+</head>
+
+<body class="d-flex flex-column">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4">
+      <a id="button" class="navbar-brand text-warning me-5" href="/index.html">FootScore</a>
+    </nav>
+  </header>
+
+
+  <main class="my-auto">
+    <div class="login">
+      <h1 class="text-center">Accedi/Registrati</h1>
+
+      <form action="ritorna-home.html" class="needs-validation">
+        <div class="form-group was-validated">
+          <lable class="form-label" for="email">Indirizzo email</lable>
+          <input class="form-control" type="email" id="email" required="">
+          <div class="invalid-feedback text-invalid">
+            Inserisci un indirizzo email
+          </div>
+          <div class="valid-feedback text-invalid">
+            Indirizzo email corretto
+          </div>
+        </div>
+
+        <div class=" form-group was-validated">
+            <lable class="form-label" for="password">Password</lable>
+            <input class="form-control" type="password" id="password" required="">
+            <div class="invalid-feedback">
+              <div class="row">
+                <div class="col-6 text-invalid">
+                  Inserisci una password
+                </div>
+                <div class="text-md-end col-6">
+                  <a class="text-invalid" href="password-dimenticata.html">Password dimenticata?</a>
+                </div>
+              </div>
+            </div>
+            <div class="valid-feedback text-invalid">
+              Password corretta
+            </div>
+          </div>
+
+
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck"><a href="/img/Termini e Condizioni.pdf"
+                  target="_blank">
+                  Accetta termini e condizioni
+                </a></label>
+            </div>
+
+
+            <input class="btn btn-success w-100" type="submit" value="ACCEDI">
+      </form>
+    </div>
+  </main>
+
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">FootScore</h5>
+          <p>Siamo un'azienda dedicata alla crescita e allo sviluppo di nuove società e squadre nel calcio, offrendo
+            prodotti e servizi per promuovere il talento e favorire l'ambiente sportivo.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Prodotti</h5>
+          <p>
+            <a href="/calciatori.html" class="text-white" style="text-decoration: none;"> Calciatore</a>
+          </p>
+          <p>
+            <a href="/tifosi.html" class="text-white" style="text-decoration: none;"> Tifoso</a>
+          </p>
+          <p>
+            <a id="button" href="/squadre.html" class="text-white" style="text-decoration: none;"> Squadra</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Link Utili</h5>
+          <p>
+            <a id="button" name="login" href="/login/login.html" class="text-white"
+              style="text-decoration: none;">Account</a>
+          </p>
+          <p>
+            <a id="button" href="/abbonamenti.html" class="text-white" style="text-decoration: none;">Abbonamento</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Unisciti a noi</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contatti</h5>
+          <p>
+            <i class="fas fa-home mr-3"></i> Fossano, CN 12045, IT
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@FootScore.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> +39 345 678 9012
+          </p>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-2 col-lg-8">
+          <p> Copyright ©2024 Tutti i diritti riservati da:
+            <a id="button" href="/index.html" style="text-decoration: none;">
+              <strong class="text-warning">FootScore</strong>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-end">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/pippo_porro/" class="btn-floating btn-sm text-white" target="_blank"
+                  style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/_giuseppearmentano/" class="btn-floating btn-sm text-white"
+                  target="_blank" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/paolorabbia_/" class="btn-floating btn-sm text-white" target="_blank"
+                  style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

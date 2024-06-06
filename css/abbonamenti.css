@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-image: url("/img/abstract-marble-gold-background.jpg");
+  background-size: cover;
+}
+
+main>h1{
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: bold;
+}
+
+main>div>div>div>a>img{
+  border-radius: 20px;
+  transition: transform 1s ease;
+}
+
+main>div>div>div>a>img:hover{
+  transform: scale(1.06);
+}
+
+.hide {
+  display: none;
+}
+
+#back{
+  background-color: white;
+}
+
+#text{
+  margin:0;
+}

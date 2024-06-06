@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Progetto a gruppi - HTML/CSS/JS</title>
+
+  <!-- Using CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- Personal styles and scripts -->
+  <script src="/js/index.js"></script>
+  <script src="/js/removeLogin.js"></script>
+  <script src="/js/checked.js"></script>
+  <script src="/login.js"></script>
+  <link href="carrello.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column">
+  <!--<img src="/img/loading.gif" alt="loading" id="gif-caricamento">-->
+  <script src="carrello.js"></script>
+  <header id="header-carrello">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 px-4">
+      <a id="button" class="navbar-brand text-warning" href="/index.html">FootScore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 text-auto">
+          <li class="nav-item">
+            <a name="login" class="nav-link" aria-current="page" href="/login/login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mt-5 mb-5" id="main-carrello">
+    <h1 class="mb-5">🛒 CARRELLO 🛒</h1>
+
+    <div class="container mt-5 mb-5 d-none col-md-8" id="carrello-vuoto">
+      <div class="row mb-3">
+        <div class="col-md-6 text-center">
+          <img src="/img/borsa.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-6 my-auto text-center">
+          <h2>Il tuo carrello della spesa è vuoto!</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-md-3 text-center mb-2">
+          <a name="login" href="/login/login.html" class="btn btn-warning btn-block">Accedi al tuo account</a>
+        </div>
+        <div class="col-md-6 mb-md-3 text-center mb-2">
+          <a href="/index.html" class="btn btn-dark btn-block">Vai ai prodotti</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento1">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/1.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Nike Phantom Luna Elite</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="195.97">195.97€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mb-5 d-none" id="elemento2">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/2.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Nike Zoom Mercurial</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="229.47">229.47€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento3">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/3.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Nike Jr. Mercurial</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="89.97">89.97€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento4">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/4.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Predator Accuracy.3</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="73.00">73.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento5">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/5.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Scarpe X CrazyFast.3</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="100.00">100.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento6">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/10.1.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Future Play FG</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="60.00">60.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento7">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/pallone-ucl.png" alt="articolo" height="90px" width="120px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Pallone UCL Pro</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="150.00">150.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento8">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/11.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Pallone Serie A</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="150.00">150.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento9">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/9.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Nike Academy</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="27.99">27.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento10">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/8.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Nike Mercurial Lite</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="32.99">32.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento11">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/12.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Parastinchi Tiro League</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="25.00">25.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mb-5 d-none" id="elemento12">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/13.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Calzettoni Nike Onee</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="10.47">10.47€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento13">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/7.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Guanti Tiro League</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="20.00">20.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento14">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/14.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Nike Pro Dri-FIT</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="27.97">27.97€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento15">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-calciatori/15.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Maglia Techfit Training</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="38.00">38.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INIZIO pagina squadre da elemento 16 a elemento 21 compresi -->
+
+    <div class="container mb-5 d-none" id="elemento16">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-squadre/cinesini.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-mx-end text-center pt-3">
+            <p>Confezione 40 coppette</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="14.99">14.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento17">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-squadre/scaletta.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Scala allenamento</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="29.99">29.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento18">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-squadre/ostacoli.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Ostacolo velocità</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="8.99">8.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento19">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-squadre/pallaeuropa.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Pallone Uefa Europa League</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="15.20">15.20€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento20">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-squadre/aste.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Aste per delimitare il campo</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="37.99">37.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento21">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-squadre/porticina_calcio.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Set di 2 porte calcio</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="44.99">44.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INIZIO pagina tifosi  -->
+
+    <div class="container mb-5 d-none" id="elemento22">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/arsenal.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Arsenal kit 23/24</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="94.99">94.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento23">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/barca.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Barcellona t-shirt 23/24</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="99.99">99.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento24">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/bayern.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Bayern t-shirt 23/24</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="99.95">99.95€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento25">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/city.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Manchester City t-shirt 23/24</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="95.99">95.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento26">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/inter.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Inter t-shirt 23/24</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="94.99">94.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento27">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/milan.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Milan t-shirt 23/24</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="95.00">95.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento28">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/napoli.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Napoli t-shirt 23/24</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="130.00">130.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento29">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/psg.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>PSG t-shirt 23/24</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="94.99">94.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-md-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento30">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/real.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Real Madrid t-shirt 23/24</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="100.00">100.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-md-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento31">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/cappello-milan.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-end text-center pt-3">
+            <p>Cappello da Baseball Milan</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="28.00">28.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento32">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/tazza-psg.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-center text-center pt-3">
+            <p>Tazza con stemma del Paris Saint-Germain</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="10.00">10.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento33">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/cassa-barca.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-center text-center pt-3">
+            <p>Altoparlante O1 - Edizione Barça di AOC</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="149.99">149.99€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento34">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/sciarpa-bayern.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-center text-center pt-3">
+            <p>Schal Rot & Weiß unisex</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="17.95">17.95€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 d-none" id="elemento35">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/cappello-real.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-center text-center pt-3">
+            <p>Guanti Arsenal FC</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="17.95">17.95€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mb-5 d-none" id="elemento36">
+      <div class="card col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-2 ms-md-4 text-md-end text-center">
+            <img src="/img-articoli-tifoso/guanti-arsenal.png" alt="articolo" height="100px" width="145px">
+          </div>
+          <div class="col-md-3 my-auto text-md-center text-center pt-3">
+            <p>Guanti Arsenal FC</p>
+          </div>
+          <div class="col-md-2 my-auto mx-auto text-center">
+            <span name="prezzo" data-prezzo="28.00">28.00€</span>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <div class="row text-center align-items-center justify-content-center">
+              <div class="col-4 text-center" id="sinistra">
+                <img src="/img/freccia-sinistra.png" alt="freccia-s" class="w-100">
+              </div>
+              <div class="col-4 text-center" id="numero">
+                <p class="my-auto mx-auto justify-content-center">1</p>
+              </div>
+              <div class="col-4 text-center" id="destra">
+                <img src="/img/freccia-destra.png" class="w-100" alt="freccia-d">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 my-auto text-center">
+            <button name="thresh" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center mb-4" id="totale-container">
+      <h2 id="totale" class="me-3 font-weight-bold"></h2>
+    </div>
+
+    <div class="container mb-5 d-none" id="container">
+      <div class="row">
+        <div id="btn-acquista" class="col-md-3 text-center text-md-end pb-2 ms-md-5">
+          <a href="/acquisti/ordina.html" class="btn btn-warning btn-block">Procedi all'ordine</a>
+        </div>
+        <div class="col-md-4 text-center text-md-start pb-2">
+          <a id="btn-svuota" class="btn btn-warning btn-block">Svuota carrello</a>
+        </div>
+        <div class="col-md-4 me-md-2 text-center pb-2">
+          <a id="button" href="/index.html" class="btn btn-dark btn-block">Torna ai prodotti</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-dark text-white" id="footer-carrello">
+    <div class="me-5 ms-5 text-center text-md-start">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">FootScore</h5>
+          <p>Siamo un'azienda dedicata alla crescita e allo sviluppo di nuove società e squadre nel calcio, offrendo
+            prodotti e servizi per promuovere il talento e favorire l'ambiente sportivo.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Prodotti</h5>
+          <p>
+            <a href="/calciatori.html" class="text-white" style="text-decoration: none;"> Calciatore</a>
+          </p>
+          <p>
+            <a href="/tifosi.html" class="text-white" style="text-decoration: none;"> Tifoso</a>
+          </p>
+          <p>
+            <a href="/squadre.html" class="text-white" style="text-decoration: none;"> Squadra</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Link Utili</h5>
+          <p>
+            <a name="login" href="/login/login.html" class="text-white" style="text-decoration: none;">Account</a>
+          </p>
+          <p>
+            <a href="/abbonamenti.html" class="text-white" style="text-decoration: none;">Abbonamento</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Unisciti a noi</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contatti</h5>
+          <p>
+            <i class="fas fa-home mr-3"></i> Fossano, CN 12045, IT
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@FootScore.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> +39 345 678 9012
+          </p>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-2 col-lg-8">
+          <p> Copyright ©2024 Tutti i diritti riservati da:
+            <a id="button" href="/index.html" style="text-decoration: none;">
+              <strong class="text-warning">FootScore</strong>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-end">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/pippo_porro/" class="btn-floating btn-sm text-white" target="_blank"
+                  style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/_giuseppearmentano/" class="btn-floating btn-sm text-white"
+                  target="_blank" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/paolorabbia_/" class="btn-floating btn-sm text-white" target="_blank"
+                  style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

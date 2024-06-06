@@ -1,0 +1,17 @@
+#thanks{
+  font-weight: bold;
+}
+
+#img-abb{
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contenitore {
+  text-align: center;
+}
+
+body{
+  background-image: url("/img/sfondo2.jpg");
+  background-size: cover;
+}

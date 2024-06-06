@@ -1,0 +1,26 @@
+main>div>form {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  margin: 10px 10px;
+}
+
+main>form>.row>div>a>img:hover{
+  cursor: pointer;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagamento{
+  width: 850px;
+}
+
+body{
+  background-image: url("/img/sfondo2.jpg");
+  background-size: cover;
+}

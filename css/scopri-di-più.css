@@ -1,0 +1,35 @@
+body{
+  background-image: url("/img/sfondo2.jpg");
+  background-size: cover;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.login{
+  width: 860px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 17px;
+  background: #ffff;
+}
+
+#logo{
+  width: 20%;
+}
+
+#torna-prodotti{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .login{
+    width: 360px;
+  }
+}

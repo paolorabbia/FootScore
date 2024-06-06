@@ -1,0 +1,63 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main>h3{
+  color: #939494;
+}
+
+main>h3:hover{
+  color: #1b1d1d;
+}
+
+main>.container>.row>.tavolozza {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+main>.row>.tavolozza>div>div>img:hover {
+  transition-duration: 1.0s;
+  transform: scale(1.08)
+}
+
+main>.container>.row>.loghi {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+main>.row>.loghi>div>div>img:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.2)
+}
+
+main>.container>.row>.loghi>div>div>img {
+  height: 100px;
+  width: 100px;
+} 
+
+main>.row>.loghi>.row>div>img:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.2)
+}
+
+main>.row>.loghi>.row>div>img {
+  height: 180px;
+  width: 150px;
+} 
+
+main>h1{
+  text-align: center;
+  font-weight: bold;
+}
+
+main>div>div>div>div>div>div>div>img:hover{
+  cursor: pointer;
+}
+
+#numero>p{
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+

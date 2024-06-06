@@ -1,0 +1,26 @@
+#thanks{
+  font-weight: bold;
+}
+
+.contenitore {
+  text-align: center;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+main>.container>.row>.ringraziamenti {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+#codice-generato {
+  color: red;
+  font-weight: bold;
+}
+
+body{
+  background-image: url("/img/sfondo2.jpg");
+  background-size: cover;
+}

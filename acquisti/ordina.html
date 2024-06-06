@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Progetto a gruppi - HTML/CSS/JS</title>
+  <link href="ordina.css" rel="stylesheet" type="text/css" />
+  <script src="ordina.js"></script>
+  <script src="js/removeLogin.js"></script>
+  <script src="/js/checked.js"></script>
+
+  <!-- Using CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 px-4">
+      <a id="button" class="navbar-brand text-warning" href="/index.html">FootScore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 text-auto">
+          <li class="nav-item">
+            <a id="button" class="nav-link" aria-current="page" href="/acquisti/carrello.html">Carrello</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="pagamento">
+      <form action="grazie_acquisto.html" class="was-validated p-5" method="post">
+        <h3 align="center">COMPILA TUTTI I CAMPI PER PROCEDERE AL PAGAMENTO</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+            <div class="invalid-feedback">
+              Inserisci il tuo nome
+            </div>
+            <div class="valid-feedback">
+              Nome corretto
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+            <div class="invalid-feedback">
+              Inserisci il tuo cognome
+            </div>
+            <div class="valid-feedback">
+              Cognome corretto
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Numero di telefono</label>
+            <input type="number" class="form-control" id="validationCustom02" required>
+            <div class="valid-feedback">
+              Numero di telefono corretto
+            </div>
+            <div class="invalid-feedback">
+              Inserisci un numero di telefono corretto
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <label for="validationCustomUsername" class="form-label">Indirizzo Email</label>
+            <div class="input-group has-validation">
+              <input type="email" class="form-control" id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Inserisci una mail valida
+              </div>
+              <div class="valid-feedback">
+                Mail inserita correttamente
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Seleziona uno stato</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Scegli un opzione...</option>
+              <option>Afghanistan</option>
+              <option>Albania</option>
+              <option>Algeria</option>
+              <option>Andorra</option>
+              <option>Angola</option>
+              <option>Antigua e Barbuda</option>
+              <option>Arabia Saudita</option>
+              <option>Argentina</option>
+              <option>Armenia</option>
+              <option>Australia</option>
+              <option>Austria</option>
+              <option>Azerbaigian</option>
+              <option>Bahamas</option>
+              <option>Bahrein</option>
+              <option>Bangladesh</option>
+              <option>Barbados</option>
+              <option>Belgio</option>
+              <option>Belize</option>
+              <option>Benin</option>
+              <option>Bhutan</option>
+              <option>Bielorussia</option>
+              <option>Birmania (Myanmar)</option>
+              <option>Bolivia</option>
+              <option>Bosnia-Erzegovina</option>
+              <option>Botswana</option>
+              <option>Brasile</option>
+              <option>Brunei</option>
+              <option>Bulgaria</option>
+              <option>Burkina Faso</option>
+              <option>Burundi</option>
+              <option>Cambogia</option>
+              <option>Camerun</option>
+              <option>Canada</option>
+              <option>Capo Verde</option>
+              <option>Ciad</option>
+              <option>Cile</option>
+              <option>Cina</option>
+              <option>Cipro</option>
+              <option>Città del Vaticano</option>
+              <option>Colombia</option>
+              <option>Comore</option>
+              <option>Corea del Nord</option>
+              <option>Corea del Sud</option>
+              <option>Costa d'Avorio</option>
+              <option>Costa Rica</option>
+              <option>Croazia</option>
+              <option>Cuba</option>
+              <option>Danimarca</option>
+              <option>Dominica</option>
+              <option>Ecuador</option>
+              <option>Egitto</option>
+              <option>El Salvador</option>
+              <option>Emirati Arabi Uniti</option>
+              <option>Eritrea</option>
+              <option>Estonia</option>
+              <option>Etiopia</option>
+              <option>Fiji</option>
+              <option>Filippine</option>
+              <option>Finlandia</option>
+              <option>Francia</option>
+              <option>Gabon</option>
+              <option>Gambia</option>
+              <option>Georgia</option>
+              <option>Germania</option>
+              <option>Ghana</option>
+              <option>Giamaica</option>
+              <option>Giappone</option>
+              <option>Gibuti</option>
+              <option>Giordania</option>
+              <option>Grecia</option>
+              <option>Grenada</option>
+              <option>Guatemala</option>
+              <option>Guinea</option>
+              <option>Guinea-Bissau</option>
+              <option>Guinea Equatoriale</option>
+              <option>Guyana</option>
+              <option>Haiti</option>
+              <option>Honduras</option>
+              <option>India</option>
+              <option>Indonesia</option>
+              <option>Iran</option>
+              <option>Iraq</option>
+              <option>Irlanda</option>
+              <option>Islanda</option>
+              <option>Isole Marshall</option>
+              <option>Isole Salomone</option>
+              <option>Israele</option>
+              <option>Italia</option>
+              <option>Kazakistan</option>
+              <option>Kenya</option>
+              <option>Kirghizistan</option>
+              <option>Kiribati</option>
+              <option>Kuwait</option>
+              <option>Laos</option>
+              <option>Lesotho</option>
+              <option>Lettonia</option>
+              <option>Libano</option>
+              <option>Liberia</option>
+              <option>Libia</option>
+              <option>Liechtenstein</option>
+              <option>Lituania</option>
+              <option>Lussemburgo</option>
+              <option>Macedonia del Nord</option>
+              <option>Madagascar</option>
+              <option>Malawi</option>
+              <option>Maldive</option>
+              <option>Malesia</option>
+              <option>Mali</option>
+              <option>Malta</option>
+              <option>Marocco</option>
+              <option>Mauritania</option>
+              <option>Mauritius</option>
+              <option>Messico</option>
+              <option>Micronesia</option>
+              <option>Moldavia</option>
+              <option>Monaco</option>
+              <option>Mongolia</option>
+              <option>Montenegro</option>
+              <option>Mozambico</option>
+              <option>Namibia</option>
+              <option>Nauru</option>
+              <option>Nepal</option>
+              <option>Nicaragua</option>
+              <option>Niger</option>
+              <option>Nigeria</option>
+              <option>Norvegia</option>
+              <option>Nuova Zelanda</option>
+              <option>Oman</option>
+              <option>Paesi Bassi</option>
+              <option>Pakistan</option>
+              <option>Palau</option>
+              <option>Palestina</option>
+              <option>Panama</option>
+              <option>Papua Nuova Guinea</option>
+              <option>Paraguay</option>
+              <option>Perù</option>
+              <option>Polonia</option>
+              <option>Portogallo</option>
+              <option>Qatar</option>
+              <option>Regno Unito</option>
+              <option>Repubblica Ceca</option>
+              <option>Repubblica Centrafricana</option>
+              <option>Repubblica del Congo</option>
+              <option>Repubblica Democratica del Congo</option>
+              <option>Repubblica Dominicana</option>
+              <option>Romania</option>
+              <option>Ruanda</option>
+              <option>Russia</option>
+              <option>Saint Kitts e Nevis</option>
+              <option>Saint Lucia</option>
+              <option>Saint Vincent e Grenadine</option>
+              <option>Samoa</option>
+              <option>San Marino</option>
+              <option>São Tomé e Príncipe</option>
+              <option>Senegal</option>
+              <option>Serbia</option>
+              <option>Seychelles</option>
+              <option>Sierra Leone</option>
+              <option>Singapore</option>
+              <option>Siria</option>
+              <option>Slovacchia</option>
+              <option>Slovenia</option>
+              <option>Somalia</option>
+              <option>Spagna</option>
+              <option>Sri Lanka</option>
+              <option>Sudafrica</option>
+              <option>Sudan</option>
+              <option>Sudan del Sud</option>
+              <option>Suriname</option>
+              <option>Svezia</option>
+              <option>Svizzera</option>
+              <option>Swaziland (Eswatini)</option>
+              <option>Tagikistan</option>
+              <option>Tanzania</option>
+              <option>Thailandia</option>
+              <option>Timor Est</option>
+              <option>Togo</option>
+              <option>Tonga</option>
+              <option>Trinidad e Tobago</option>
+              <option>Tunisia</option>
+              <option>Turchia</option>
+              <option>Turkmenistan</option>
+              <option>Tuvalu</option>
+              <option>Ucraina</option>
+              <option>Uganda</option>
+              <option>Ungheria</option>
+              <option>Uruguay</option>
+              <option>Uzbekistan</option>
+              <option>Vanuatu</option>
+              <option>Venezuela</option>
+              <option>Vietnam</option>
+              <option>Yemen</option>
+              <option>Zambia</option>
+              <option>Zimbabwe</option>
+            </select>
+            <div class="invalid-feedback">
+              Scegli uno stato
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">Città</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Inserisci una città valida
+            </div>
+            <div class="valid-feedback">
+              Città corretta
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-7">
+          <label for="validationCustom04" class="form-label">Seleziona un punto di ritiro</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Scegli un opzione...</option>
+            <option>Ufficio di Ritiro Pacchi Express</option>
+            <option>Punto Pacchi Veloce Shop & Go</option>
+            <option>Centro di Scambio Pacchi DirectDrop</option>
+            <option>Ufficio di Ritiro e Consegna Pacchi SwiftPost</option>
+            <option>Punto di Ritiro Pacchi SmartPick</option>
+            <option>Centro di Scambio e Deposito Pacchi EasyCollect</option>
+            <option>Ufficio di Distribuzione Pacchi QuickDrop</option>
+            <option>Punto di Ritiro e Consegna ExpressParcel</option>
+            <option>Centro di Ritiro Pacchi RapidDispatch</option>
+            <option>Ufficio di Ritiro e Consegna SuperSwiftShip</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck"><a href="/img/Termini e Condizioni.pdf" target="_blank">
+                Accetta termini e condizioni
+              </a></label>
+            <div class="invalid-feedback">
+              Devi accettare i termini
+            </div>
+            <div class="valid-feedback">
+              Grazie!
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <h5>Scegli un metodo di pagamento</h5>
+        <div class="row pb-4">
+          <div class="col-md-2 my-auto">
+            <a href="https://www.satispay.com/it-it/" target="_blank"> <img src="/img/logo-satispay-rosso.png"
+                alt="paga" class="img-fluid " ></a>
+          </div>
+          <div class="col-md-2 my-auto">
+            <a href="https://www.paypal.com/it/home" target="_blank"> <img src="/img/paypal.png" alt="paga"
+                class="img-fluid" ></a>
+          </div>
+          <div class="col-md-2 my-auto">
+            <a href="https://pay.amazon.it/" target="_blank"> <img src="/img/amazon_logo.png" alt="paga"
+                class="img-fluid"></a>
+          </div>
+          <div class="col-md-2 my-auto">
+            <a href="https://pay.google.com/intl/it_it/about/" target="_blank"> <img src="/img/Google_Pay.png"
+                alt="paga" class="img-fluid " ></a>
+          </div>
+          <div class="col-md-2 my-auto">
+            <a href="https://www.apple.com/it/apple-pay/" target="_blank"> <img src="/img/apple-pay.png" alt="paga"
+                class="img-fluid " ></a>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">ACQUISTA</button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">FootScore</h5>
+          <p>Siamo un'azienda dedicata alla crescita e allo sviluppo di nuove società e squadre nel calcio, offrendo
+            prodotti e servizi per promuovere il talento e favorire l'ambiente sportivo.</p>
+        </div>
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Link Utili</h5>
+          <p>
+            <a name="login" href="/login/login.html" class="text-white" style="text-decoration: none;">Account</a>
+          </p>
+          <p>
+            <a href="/abbonamenti.html" class="text-white" style="text-decoration: none;">Abbonamento</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Unisciti a noi</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contatti</h5>
+          <p>
+            <i class="fas fa-home mr-3"></i> Fossano, CN 12045, IT
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@FootScore.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> +39 345 678 9012
+          </p>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-2 col-lg-8">
+          <p> Copyright ©2024 Tutti i diritti riservati da:
+            <a id="button" href="/index.html" style="text-decoration: none;">
+              <strong class="text-warning">FootScore</strong>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-end">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/pippo_porro/" class="btn-floating btn-sm text-white" target="_blank"
+                  style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/_giuseppearmentano/" class="btn-floating btn-sm text-white" target="_blank"
+                  style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/paolorabbia_/" class="btn-floating btn-sm text-white" target="_blank"
+                  style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+  
+</html>

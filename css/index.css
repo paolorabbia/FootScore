@@ -1,0 +1,47 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-image: url("img/video_calcio.mp4");
+  background-size: cover;
+}
+
+/* #title-index{
+  color: black;
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: bold;
+}
+
+#footscore{
+  color: #e69e0f;
+  font-family: "Radio Canada Big", sans-serif;
+} */
+
+main>div>div>div>a>img{
+  border-radius: 20px;
+  transition: transform 1s ease;
+}
+main>div>div>div>a>img:hover{
+  transform: scale(1.06);
+}
+
+header{
+  z-index: 1;
+}
+
+video{
+  position:absolute;
+  overflow: hidden;
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover;
+  z-index: -100;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+      background-image: url("/img/sfondo2.jpg");
+      background-size: cover;
+  }
+}
